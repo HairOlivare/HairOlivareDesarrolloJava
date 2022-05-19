@@ -1,0 +1,36 @@
+*{
+	font-family: arial;
+}
+table{
+	margin: 5% auto;
+}
+
+table caption{
+	font-size: 1.7em;
+	padding: 5px;
+}
+
+table th{
+	font-size: 1.4em;
+	padding: 4px 30px;
+	background: #3D436A;
+	color: #FBAF37;
+}
+
+table td{
+	text-align: center;
+	font-size: 1.2em;
+	padding: 3px 30px;
+	color: white;
+	background: #3D435A;
+}
+
+table td i{
+	font-size: 15px;
+	padding: 0px 20px;
+}
+
+table, th, td, tr{
+	border: 1px solid black;
+	border-collapse: collapse;
+}

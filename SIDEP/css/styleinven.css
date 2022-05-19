@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.formularioinve{
+	background: #3D436B;
+	padding: 30px;
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+	font-size: 1.3vw;
+	color: #fff;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+.formularioinve label,input,select{
+	margin:10px 15px;
+}
+
+.formularioinve h2{
+	text-align: center;
+	font-size: 2.4em;
+	color: #FBAF37;
+}
+
+.inputf{
+	width: 100px;
+	font-size: 1.1em;
+}
+
+table{
+	margin: 0px auto;
+	text-align: right;
+}

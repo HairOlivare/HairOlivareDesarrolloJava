@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="css/styleIngreso.css">
+	<title>Ingresar usuario</title>
+</head>
+<body>
+    <header>
+        <!-- primera columna: logo -->
+        <div class="logo">
+            <img src="img/png/Logodefinitivo_uno.png" alt="">
+        </div>
+        </header>
+
+        <form action="" method="post" id="formulario">
+		<div class="formulario">
+			<h2>Inicio de Sesión</h2>
+			<br><br>
+            
+            <label>Correo electrónico</label>
+            <input type="email" class="formulario_input" id="correo" name="correo">
+            <br>
+            <label for="password" class="formulario_label">Contraseña</label>
+            <input type="password" class="formulario_input" id="password" name="password">
+            <br>
+
+            <button type="submit" class="boton" id="boton">Enviar</button>
+            <p class="warnings" id="warnings"></p>
+            
+            <p><a href="index.html">Volver</a></p>
+        </div>
+    </form>
+    <div class="dashboards">
+        <form action="dashboard/dashAdmin.html">
+            <input type="submit" class="inputf" value="Administrador"> 
+            </form>
+            
+            <form action="dashboard/dashboard.html">
+            <input type="submit" class="inputf" value="Panadero">
+            </form>
+            
+            <form action="dashboard/dashvendedor.html">
+             <input type="submit" class="inputf" value="Vendedor">
+            </form>
+            </div>
+
+    <script src="JS/login.js"></script>
+</body>
+</html>

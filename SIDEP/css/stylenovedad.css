@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+label{
+	font-size: 1.3em;
+	color: #fbaf37;
+}
+
+table{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.novedades__titulo{
+	color: #fbaf37;
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	grid-column: span 2;
+	padding: 25px 0px;
+}	
+.formularioinve{
+	background: #3D436B;
+	padding: 10px;
+	width: 55%;
+	margin: 5% auto;
+	text-align: center;
+	color: #fff;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+
+
+
+.formularioinve label,input,select{
+	margin:10px 15px;
+}
+
+/*.formularioinve h3{
+	text-align: center;
+	font-size: 3.5em;
+	color: #FBAF37;
+}*/
+
+
+.inputf {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: rgba(35, 41, 49, 0.966);
+	color: #fbaf37;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: .1s ease all;

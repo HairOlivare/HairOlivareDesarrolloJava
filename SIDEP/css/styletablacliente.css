@@ -1,0 +1,37 @@
+*{
+	font-family: arial;
+}
+
+table{
+	margin: 5% auto;
+}
+
+
+table th{
+	font-size: 1.4em;
+	padding: 4px 30px;
+	background: #3D436B;
+	color: #FBAF37;
+}
+
+table td{
+	text-align: center;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 1.2em;
+	padding: 3px 30px;
+}
+
+table td i{
+	font-size: 20px;
+	padding: 0px 20px;
+}
+
+table, th, td, tr{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+table caption{
+	font-size: 1.7em;
+	padding: 5px;
+	color: #3D436B;
+}

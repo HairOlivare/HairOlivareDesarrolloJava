@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Registrar ventas</title>
+</head>
+<body>
+
+<form onsubmit="return validar()">
+<div class="formulario">
+    <div class="heaNavega">
+        <h1>Ventas</h1>
+    </div>
+    <br>
+    <label>Cliente: </label>
+    <input type="number" id="idcliente" placeholder="Identificación">
+    <br><br>
+    <label>Fecha de venta</label>
+    <input type="date" id="fecha">
+    <br><br>
+    <strong><label for="">Productos</label></strong>
+    <br><br>
+    <table>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkcal">
+        <label>Calados</label></td>
+        <td><input type="number" id="numcal" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        <td><input type="checkbox" name="box" id="checkmca">
+        <label>Mogolla campesina</label></td>
+        <td><input type="number" id="nummca" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkmin">
+        <label>Mogolla integral</label></td>
+        <td><input type="number" id="nummin" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        <td><input type="checkbox" name="box" id="checkpblan">
+        <label>Pan blandito</label></td>
+        <td><input type="number" id="numpblan" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkpco">
+        <label>Pan coco</label></td>
+        <td><input type="number" id="numpco" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        <td><input type="checkbox" name="box" id="checkpcos">
+        <label>Pan costeño</label></td>
+        <td><input type="number" id="numpcos" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkpfran">
+        <label>Pan frances</label></td>
+        <td><input type="number" id="numpfran" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        <td><input type="checkbox" name="box" id="checkpga">
+        <label>Pan galleta</label></td>
+        <td><input type="number" id="numpga" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkprollo">
+        <label>Pan rollo</label></td>
+        <td><input type="number" id="numprollo" disabled="true" required="false" class="canti" onkeyup="sumar();" ></td>
+        <td><input type="checkbox" name="box" id="checkpros">
+        <label>Pan roscon</label></td>
+        <td><input type="number" id="numpros" disabled="true" required="false" class="canti" onkeyup="sumar();"></td>
+        </tr>
+    </table>
+        <br><br><br>
+        <strong><label for="">Total cantidad:</label></strong>
+        <input type="number" id="totalcanti">
+        <strong><label for="">Valor total:</label></strong>
+        <input type="number">
+    <br><br>
+    <input type="submit" value="Registrar venta" class="inputf">
+    <input type="button" value="Limpiar" class="inputf" id="limpiar">
+
+</div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="Js/ventas.js"></script>
+
+</body>
+</html>

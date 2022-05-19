@@ -1,0 +1,37 @@
+*{
+    font-family: arial;
+}
+.formulario{
+    background:#3D436B ;
+    padding: 30px;
+    width: 70%;
+    margin: 1% auto;
+    text-align: center;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+ }
+
+ table{
+    margin: 0px auto;
+    text-align: left;
+ }
+
+.input{
+    width: 200px;
+    border: 1px solid #04030F;
+    padding: 5px;  
+}
+.heaNavega h1{
+text-align:center;
+font-size: 3em;
+color:#fbaf37
+}
+.formulario label{
+  font-size: 1.3em;
+}
+
+.inputf{
+    width: 150px;
+    font-size: 1em;
+}

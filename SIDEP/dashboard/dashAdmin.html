@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styledashAdmin.css">
+	<link rel="stylesheet" href="../iconos/css/all.css">
+	<title>DashBoard Administrador</title>
+</head>
+<body>
+	<a href="principal.html" target="principal"></a>
+	<!-- Barra principal: logo - cerrar -->
+	<header>
+		<!-- 1 columna: logo -->
+		<div class="logosistema">
+			<img src="img/Logodefinitivo.png" alt="">
+		</div>
+
+		<!-- 2 columna: cerrar -->
+		<div class="cerrar">
+			<a href="dashAdmin.html"><i class="fas fa-house-user"></i></a>
+			<a href="../index.html"><i class="fas fa-sign-out-alt"></i></a>
+		</div>
+
+	</header>
+
+	<!-- Contenido: barra izquierda navegacion - area de trabajo -->
+	<main>
+		<!-- Barra de navegacion -->
+		<nav>
+
+			<!-- Información rol/usuario/actor -->
+			<div class="rol">
+				<!-- <img src="img/administrador.jpg" alt="">	 -->
+				<i class="fas fa-user-circle"></i>
+				<h4>Marcos Cifuentes</h4>
+				<p>Administrador</p>
+			</div>
+
+
+			<div class="inventario" id="inventario">
+		   		<h3>Inventario</h3>
+		   		<ul>
+					<li><a href="../insumos.html"target="principal"><i class="fas fa-bread-slice"></i>
+					Registrar insumo</a></li>
+					<li><a href="../proveedor.html"target="principal"><i class="fas fa-user-tag"></i>
+					Registrar proveedor</a></li>
+		   	  	<li><a href="../entrada.html" target="principal"><i class="fas fa-truck-loading"></i>  Registrar entrada</a></li>
+		   	  	<li><a href="../salida.html" target="principal" class="salida"><i class="fas fa-dolly-flatbed"></i> Registrar salidas</a></li>
+		   	  	<li><a href="../inventario.html" target="principal"><i class="fas fa-boxes"></i> Consultar inventario</a></li>
+		   		</ul>	
+			</div>
+		   <h3>Planeación producción</h3>
+		   <ul>
+		   		<li><a href="../registroproducto.html" target="principal"><i class="fas fa-bread-slice"></i> Registrar Producto</a></li>
+		   		<li><a href="../solicitudes.html" target="principal"><i class="fas fa-eye"></i>  Consultar producción</a></li>
+		   	</ul>
+
+		   	<h3>Ventas</h3>
+		   <ul>
+		   		<li><a href="../venta.html" target="principal"><i class="fas fa-cart-arrow-down"></i>  Ventas realizadas</a></li>
+		   		<li><a href="../fechaproductos.html" target="principal"><i class="fab fa-product-hunt"></i>  Productos más vendidos</a></li>
+		   	</ul>
+			   <h3>Control de personal</h3>
+			   <ul>
+				   <li><a href="../registroempleados.html" target="principal"><i class="fas fa-user-plus"></i>Registro empleados</a></li>
+				   <li><a href="../empleados.html" target="principal"><i class="fas fa-users"></i>Empleados</a></li>
+			   </ul>
+		</nav>
+
+		<!-- area de trabajo -->
+		<section>
+			<!-- Area de trabajo -->
+			<iframe name="principal" src="principal.html" ></iframe>
+		</section>
+	</main>
+
+	<!-- pie de pagina -->
+
+	<!-- <footer>
+		<div class="pie-pag" id="pie-pag">
+		<h4>SERVICIO NACIONAL DE APRENDIZAJE</h4>
+		<p>
+		Centro de servicios financieros
+		<br>
+		Analisis y desarrollo de sistemas de información
+		</p>
+		<h4> Desarrolladores GAES 6</h4>
+		<p>Aprendiz Hair Olivare</p>
+		<p>Aprendiz Camilo Estupiñan</p>
+		<p>Aprendiz Cristhian Rodríguez</p>
+	</div>
+	</footer> -->
+</body>
+</html>

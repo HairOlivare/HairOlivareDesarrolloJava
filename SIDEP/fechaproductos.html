@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/stylefechapro.css">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<title>Producto más vendidos</title>
+</head>
+<body>
+	<form action="productos.html">
+		<div class="formularioinve">
+			<h2>Fecha de consulta</h2>
+			<br><br>
+		<label>A partir de: </label>
+		<input type="date" class="input" id="fechain">
+		<br><br>
+
+		<label>Hasta: </label>
+		<input type="date" class="input" id="fechafin">
+		
+			<br><br>
+			<input type="submit" value="Consultar" class="inputf" onclick="return validar();">
+	</div>
+	</form>
+
+	<script src="js/fechaproductos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+	
+</body>
+</html>

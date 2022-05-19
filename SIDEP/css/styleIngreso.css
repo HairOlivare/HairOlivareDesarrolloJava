@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Dosis&family=Oswald:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+header{
+	background: #9d0208;
+	display: flex;
+    align-items: flex-end;
+}
+
+.logo{
+    width: 50%;
+}
+.logo img{
+    width: 22%;
+	padding: 2%;
+}
+.formulario{
+	background: #2c314e;
+	padding: 10px;
+	width: 40%;
+	margin: 5% auto;
+	text-align: center;
+	font-size: 1.3vw;
+	border: 4px solid #000;
+	border-radius: 10px;
+}
+.formulario input{
+	margin:10px 0;
+}
+
+.formulario label{
+	color: #fff;
+}
+
+.formulario p a{
+	color: #8CEDDD;
+	text-decoration: none;
+}
+
+.formulario h2{
+	text-align: center;
+	font-size: 2.5vw;
+    color: #FBAF37;
+}
+
+.boton {
+	padding: 3px 6px;
+	width: 175px;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.inputf{
+	padding: 3px 6px;
+	width: 175px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background: #9d0208;
+	cursor: pointer;
+	transition: .1s ease all;
+	color: #fff;
+}
+
+.warnings {
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	color: #B06AB3;
+	padding-top: 20px ;
+}
+
+.dashboards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	text-align: center;
+}
+body{
+	background: #adb9d4
+}

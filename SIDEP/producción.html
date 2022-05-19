@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleFormProduccion.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Formulario</title>
+</head>
+
+<div class="heaNavega">
+<h1>PRODUCCIÓN</h1>
+</div>
+<form onsubmit="return validar()">
+    <label>Encargado</label>
+    <input type="text"placeholder="Nombre" id="nombre">
+    <input type="text"placeholder="Apellido" id="apellido">
+    <br><br>
+    <label>Fecha de producción</label>
+    <input type="date" id="fecha">
+    <label>Tipo de producto</label>
+    <select id="sel">
+        <option value="">seleccione</option>
+        <option value="1">Calados</option>
+        <option value="2">Mogolla campesina</option>
+        <option value="3">Mogolla integral</option>
+        <option value="4">Pan blandito</option>
+        <option value="5">Pan coco</option>
+        <option value="6">Pan costeño</option>
+        <option value="7">pan frances</option>
+        <option value="8">Pan galleta</option>
+        <option value="9">Pan rollo</option>
+        <option value="10">Pan roscón</option>
+    </select>
+    <br><br>
+    <label>Cantidad del producto</label>
+    <input type="number" id="canti">
+    <br><br>
+    <label>Hora de inicio</label>
+    <input type="time" id="horain" required> 
+    <label>Hora final</label>
+    <input type="time" id="horafin" required>
+    <table>
+        <tr>
+            <th><strong>Insumo</strong> </th>
+            <th><strong>Unidad de medida</strong></th>
+            <th><strong>Cantidad</strong></th>
+        </tr>
+        <tr>
+       <td><input type="checkbox" name="box" id="checkare">
+                <label>Arequipe</label>
+            </td>
+            <td>
+            <select id="selare" disabled="true" required="false">
+                <option value="">Unidad de medida</option>
+                <option value="gr">Gr</option>
+                <option value="kg">Kg</option>
+                <option value="lt">L</option>
+            </select>
+        </td>
+            <td>
+            <input type="number" placeholder="Cantidad" id="numare" disabled="true" required="false"></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkazu">
+        <label>Azúcar</label></td>
+        <td>
+        <select id="selazu" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select>
+    </td>
+        <td>
+        <input type="number" placeholder="Cantidad" id="numazu" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkbicar">
+        <label>Bicarbonato de sodio</label></td>
+        <td><select id="selbicar" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select>
+        </td>
+        <td><input type="number" placeholder="Cantidad" id="numbicar" disabled="true" required="false">
+        </td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkcho">
+        <label>Chocolate</label></td>
+        <td><select id="selcho" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select>
+        </td>
+        <td>
+        <input type="number" placeholder="Cantidad" id="numcho" disabled="true" required="false">
+        </td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkesen">
+        <label>Esencias</label></td>
+        <td><select id="selesen" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select>
+        </td>
+        <td>
+        <input type="number" placeholder="Cantidad" id="numesen" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkfecu">
+        <label>Fecula de maiz</label></td>
+        <td><select id="selfecu" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td>
+        <input type="number" placeholder="Cantidad" id="numfecu" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkfs">
+        <label>Frutos secos</label></td>
+        <td><select id="selfs" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numfs" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkhari">
+        <label>Harina de trigo</label></td>
+        <td><select id="selhari" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numhari" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkhue">
+        <label>Huevos</label></td>
+        <td><select id="selhue" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numhue" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkle">
+        <label>Leche</label></td>
+        <td>
+        <select id="selle" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select>
+        </td>
+        <td><input type="number" placeholder="Cantidad" id="numle" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkleva">
+        <label>Levadura</label></td> 
+        <td><select id="selleva" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numleva" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkmai">
+        <label>Maicena</label></td>
+        <td><select id="selmai" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="nummai" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkman">
+        <label>Mantequilla</label></td>
+        <td><select id="selman" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numman" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkpol">
+        <label>Polvo para hornear</label></td>
+        <td><select id="selpol" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numpol" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checkque">
+        <label>Queso</label></td>
+        <td><select id="selque" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numque" disabled="true" required="false"></td>
+    </tr>
+        <tr>
+        <td><input type="checkbox" name="box" id="checksal">
+        <label>Sal</label></td>
+        <td><select id="selsal" disabled="true" required="false">
+            <option value="">Unidad de medida</option>
+            <option value="gr">Gr</option>
+            <option value="kg">Kg</option>
+            <option value="lt">L</option>
+        </select></td>
+        <td><input type="number" placeholder="Cantidad" id="numsal" disabled="true" required="false"></td>
+    </tr>
+    </table>
+    <input type="submit" value="Registrar" class="inputf">
+    <input type="button" value="Limpiar" class="inputf" id="limpiar">
+
+
+<!-- </div> -->
+</form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="Js/producción.js"></script>
+<body>
+</body>
+</html>

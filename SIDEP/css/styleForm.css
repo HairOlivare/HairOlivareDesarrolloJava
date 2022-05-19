@@ -1,0 +1,11 @@
+.formulario{
+    background:#caf0f8 ;
+    padding: 30px;
+    width: 40%;
+    margin: 1% auto;
+}
+.input{
+    width: 200px;
+    border: 1px solid #04030F;
+    padding: 5px;
+}

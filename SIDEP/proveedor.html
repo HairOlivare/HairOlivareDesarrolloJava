@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styleproveedor.css">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<title>Registrar proveedor</title>
+</head>
+<body>
+	<form method="POST">
+		<div class="formularioproveedor">
+			<h2>Registrar proveedor</h2>
+			<br><br>
+			<table>
+				<tr>
+			<td><label>Seleccione tipo de proveedor: </label></td>
+			<td><select id="sel">
+				<option value="">Seleccionar</option>
+				<option value="1">Independiente</option>
+				<option value="2">Empresa</option>
+			</select></td></tr>
+			<tr><td><label>Nombre proveedor: </label></td>
+			<td><input type="text" placeholder="Ingrese nombre" id="nombre">
+			</td></tr>
+			<tr>
+			<td><label>Dirección: </label></td>
+			<td><input type="text" id="direccion" placeholder="Ingrese la dirección"></td></tr>
+			<tr>
+			<td><label>Teléfono: </label></td>
+			<td><input type="text" id="tel" placeholder="Ingrese el teléfono"></td>
+			</tr>
+			
+		</table>
+			<br><br>
+
+			<input type="button" value="Registrar" class="inputf" onclick="return validar()">
+
+
+	</div>
+	</form>
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="Js/proveedor.js"></script>
+</body>
+</html>
