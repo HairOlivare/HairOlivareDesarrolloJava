@@ -8,7 +8,7 @@ public class Conexion {
 	private Connection cnx=null;
 	private String usuario="root";
 	private String password="";
-	private String url="jdbc:mysql://localhost/"+db;
+	private String url="jdbc:mysql://localhost:3306/manejoempleados"+db;
 	//Constructor por defecto
 	public Conexion() {}
 	//Constructor sobre cargado
