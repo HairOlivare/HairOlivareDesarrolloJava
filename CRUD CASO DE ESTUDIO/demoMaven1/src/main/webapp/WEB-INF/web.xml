@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>DepartamentoServletController</servlet-name>
+  	<display-name>DepartamentoServletController</display-name>
+  	<description></description>
+  	<servlet-class>com.hairprog.demoMaven1.app.controller.DepartamentoServletController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmpleadoServletController</servlet-name>
+  	<display-name>EmpleadoServletController</display-name>
+  	<description></description>
+  	<servlet-class>com.hairprog.demoMaven1.app.controller.EmpleadoServletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DepartamentoServletController</servlet-name>
+  	<url-pattern>/DepartamentoServletController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmpleadoServletController</servlet-name>
+  	<url-pattern>/EmpleadoServletController</url-pattern>
+  </servlet-mapping>
+</web-app>
